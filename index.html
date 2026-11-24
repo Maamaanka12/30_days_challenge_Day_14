@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Larkspur Pharmacy — an independent neighborhood pharmacy for prescriptions, wellness and everyday care.">
+  <title>Larkspur Pharmacy — Care, compounded with attention</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- ===== floating pill navigation ===== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Larkspur Pharmacy home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="8" width="18" height="8" rx="4" transform="rotate(-40 12 12)"/><path d="M12 8v8" transform="rotate(-40 12 12)"/></svg>
+        </span>
+        <span class="brand-name">Larkspur<span class="brand-dot">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link" data-nav="home" href="index.html">Home</a></li>
+        <li><a class="nav-link" data-nav="about" href="about.html">About</a></li>
+        <li><a class="nav-link" data-nav="products" href="products.html">Products</a></li>
+        <li><a class="nav-link" data-nav="contact" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="bag-button" id="bagButton" aria-label="Shopping bag, 0 items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          <span class="bag-count" id="bagCount">0</span>
+        </button>
+        <a class="btn btn-primary btn-sm" href="contact.html">Book a consult <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menuOverlay" aria-label="Open menu"><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <nav class="menu-inner" aria-label="Mobile navigation">
+      <a style="--i:0" href="index.html">Home</a>
+      <a style="--i:1" href="about.html">About</a>
+      <a style="--i:2" href="products.html">Products</a>
+      <a style="--i:3" href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-foot">
+      <span>14 Willow Lane · Northgate</span>
+      <span>Open until 8pm today</span>
+      <span>(555) 0142-8890</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===== hero ===== -->
+    <section class="hero grid-bg">
+      <div class="wrap">
+        <div class="hero-copy">
+          <span class="eyebrow">Independent pharmacy · Est. 2014</span>
+          <h1 class="display">Care, compounded<br>with <em>attention.</em></h1>
+          <p class="lead">Prescriptions, wellness and the good kind of fuss. We're the neighborhood pharmacy that still remembers your name — and your dosage.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="products.html">Explore products <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+            <a class="btn btn-ghost" href="contact.html">Talk to a pharmacist <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          </div>
+          <div class="hero-note">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            Licensed pharmacists · Same-day delivery · Open 7 days
+          </div>
+        </div>
+
+        <!-- signature amber bottle -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="halo"></div>
+          <div class="seal"><span>Rx</span></div>
+          <div class="float-tag float-tag--one">Compounded<br>fresh today</div>
+          <div class="bottle">
+            <div class="bottle-cap"></div>
+            <div class="bottle-neck"></div>
+            <div class="bottle-body">
+              <div class="bottle-shine"></div>
+              <div class="bottle-label">
+                <div class="label-top"><span>LARKSPUR</span><span>№ 04</span></div>
+                <div class="label-rx">Rx</div>
+                <div class="label-name">Daily Wellbeing</div>
+                <div class="label-lines"><i></i><i></i><i></i></div>
+                <div class="label-foot">DISPENSED WITH CARE · 30 CAPSULES</div>
+              </div>
+            </div>
+          </div>
+          <div class="capsule-float"></div>
+          <div class="float-tag float-tag--two">Locally made<br>since 2014</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== assurance strip ===== -->
+    <section class="assurance">
+      <div class="wrap">
+        <div class="assurance-row reveal">
+          <div class="assurance-item">
+            <div class="assurance-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <div><strong>Licensed &amp; accredited</strong><small>Every prescription checked twice</small></div>
+          </div>
+          <div class="assurance-item">
+            <div class="assurance-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg></div>
+            <div><strong>Same-day delivery</strong><small>Within a 5-mile radius</small></div>
+          </div>
+          <div class="assurance-item">
+            <div class="assurance-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div><strong>Open seven days</strong><small>Late nights, no appointment needed</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="perforation"></div></div>
+
+    <!-- ===== featured products ===== -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-head-copy">
+            <span class="eyebrow">The apothecary shelf</span>
+            <h2 class="section-title">Everyday remedies,<br>thoughtfully chosen.</h2>
+          </div>
+          <p class="lead">Small-batch supplements and daily essentials we'd happily recommend to our own families.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-art art-a">
+              <span class="product-tag">Bestseller</span>
+              <img src="img/supplement.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Supplements</span>
+              <h3>Daily Multivitamin</h3>
+              <p>One capsule, everything you need. A balanced blend for steady energy.</p>
+              <div class="product-bottom"><span class="price">$24.00</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-art art-b">
+              <img src="img/dropper.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Supplements</span>
+              <h3>Vitamin D3 Drops</h3>
+              <p>Sunshine in a bottle. Two drops a day, all year round.</p>
+              <div class="product-bottom"><span class="price">$18.50</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-art art-c">
+              <img src="img/tea-box.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Wellness</span>
+              <h3>Herbal Sleep Tea</h3>
+              <p>Chamomile, lemon balm and a little help winding down.</p>
+              <div class="product-bottom"><span class="price">$12.00</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-art art-d">
+              <img src="img/balm.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Skincare</span>
+              <h3>Eczema Relief Balm</h3>
+              <p>Gentle, fragrance-free comfort for sensitive skin.</p>
+              <div class="product-bottom"><span class="price">$16.00</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align:center;margin-top:38px" class="reveal">
+          <a class="btn btn-ghost" href="products.html">See the full shelf <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== services bento ===== -->
+    <section class="section section--tight" style="background:var(--paper-deep)">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-head-copy">
+            <span class="eyebrow">More than a counter</span>
+            <h2 class="section-title">A little more care,<br>in every visit.</h2>
+          </div>
+        </div>
+        <div class="bento">
+          <article class="bento-card bento-card--wide bento-card--dark reveal">
+            <span class="bento-num">01 / SERVICES</span>
+            <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 3.5 3 11l10 10 7.5-7.5a2.1 2.1 0 0 0 0-3L13.5 3.5a2.1 2.1 0 0 0-3 0Z"/><path d="M7.5 7 17 16.5"/><circle cx="8" cy="8" r="1"/></svg></div>
+            <h3>Prescriptions, handled.</h3>
+            <p>Drop it off, collect it later — or have it delivered. We chase the insurance so you don't have to.</p>
+            <a class="text-link" href="contact.html">Start a refill <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="bento-card bento-card--half reveal">
+            <span class="bento-num">02</span>
+            <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-4.6-8-10a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 11c0 5.4-8 10-8 10Z"/></svg></div>
+            <h3>Compounding</h3>
+            <p>Custom doses and formats when off-the-shelf won't do.</p>
+          </article>
+          <article class="bento-card bento-card--third reveal">
+            <span class="bento-num">03</span>
+            <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+            <h3>Open late, every day</h3>
+            <p>Helpful humans until 8pm — weekends included. No appointment needed for a chat.</p>
+          </article>
+          <article class="bento-card bento-card--third reveal">
+            <span class="bento-num">04</span>
+            <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16M6 16V9M11 16V5M16 16v-4M21 16v-7"/></svg></div>
+            <h3>Health checks</h3>
+            <p>Blood pressure, blood sugar and medication reviews, free with any visit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== story teaser ===== -->
+    <section class="story section">
+      <div class="wrap">
+        <div class="story-visual reveal" aria-hidden="true">
+          <div class="ring"></div><div class="ring"></div>
+          <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M84 118c-18-10-28-26-26-44 2-20 18-34 38-34 18 0 32 12 35 28 3 17-8 32-24 38"/>
+            <path d="M96 112c-22-2-42-16-46-38 22-4 43 6 52 26"/>
+            <path d="M110 110c14-18 36-24 54-14-8 21-28 32-49 28"/>
+            <path d="M100 116v62M100 150l30-26M100 160l-26-22"/>
+            <path d="M70 178h60"/>
+          </svg>
+          <div class="story-badge"><span class="brand-mark" aria-hidden="true" style="width:34px;height:34px;flex:0 0 34px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="8" width="18" height="8" rx="4" transform="rotate(-40 12 12)"/><path d="M12 8v8" transform="rotate(-40 12 12)"/></svg></span><div><strong>Rooted in the neighborhood</strong><small>Ten years on Willow Lane</small></div></div>
+        </div>
+        <div class="story-copy reveal">
+          <span class="eyebrow">Our story</span>
+          <h2 class="section-title">Built around a simple idea: <em>know your pharmacist.</em></h2>
+          <p>Larkspur started in 2014 with one counter, one compounding bench and a belief that healthcare should feel human. No queues behind numbered tickets. No rushing you out the door.</p>
+          <p>Ten years on, we're still independent, still local, and still the place where the person behind the counter knows which tea you like.</p>
+          <a class="text-link" href="about.html" style="margin-top:10px">Meet the team <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== quote ===== -->
+    <section class="quote-section">
+      <div class="wrap reveal">
+        <div class="quote-mark" aria-hidden="true">“</div>
+        <blockquote>They caught a dosage error my previous pharmacy missed. That's the kind of attention you can't automate.</blockquote>
+        <cite>— Marta R., customer since 2016</cite>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-band">
+      <div class="wrap">
+        <div class="cta-inner reveal">
+          <div>
+            <h2>Something you need,<br><em>before you need it?</em></h2>
+            <p>Pop in, call, or send us a note. A real pharmacist answers every message.</p>
+          </div>
+          <a class="btn btn-ghost" href="contact.html">Get in touch <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="8" width="18" height="8" rx="4" transform="rotate(-40 12 12)"/><path d="M12 8v8" transform="rotate(-40 12 12)"/></svg></span><span class="brand-name">Larkspur<span class="brand-dot">.</span></span></a>
+          <p>An independent pharmacy for the people who live around the corner. Care, compounded with attention since 2014.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About us</a></li><li><a href="products.html">Products</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <ul><li>14 Willow Lane</li><li>Northgate, NG2 4LP</li><li>Mon–Sun, 8am–8pm</li><li>(555) 0142-8890</li></ul>
+        </div>
+        <div class="footer-col footer-news">
+          <h4>The good stuff</h4>
+          <p>Occasional notes on wellness, new arrivals and things worth knowing.</p>
+          <form class="footer-form"><label class="sr-only" for="footerEmail">Email address</label><input id="footerEmail" type="email" placeholder="Your email"><button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Larkspur Pharmacy</span><span>Licensed pharmacy · Registration No. 4471-NG</span><span>Made with care in Northgate</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

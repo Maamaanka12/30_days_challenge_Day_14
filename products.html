@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the Larkspur Pharmacy shelf — supplements, wellness, skincare and everyday essentials, thoughtfully chosen.">
+  <title>Products — Larkspur Pharmacy</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="products">
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Larkspur Pharmacy home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="8" width="18" height="8" rx="4" transform="rotate(-40 12 12)"/><path d="M12 8v8" transform="rotate(-40 12 12)"/></svg></span>
+        <span class="brand-name">Larkspur<span class="brand-dot">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link" data-nav="home" href="index.html">Home</a></li>
+        <li><a class="nav-link" data-nav="about" href="about.html">About</a></li>
+        <li><a class="nav-link" data-nav="products" href="products.html">Products</a></li>
+        <li><a class="nav-link" data-nav="contact" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="bag-button" id="bagButton" aria-label="Shopping bag, 0 items"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="bag-count" id="bagCount">0</span></button>
+        <a class="btn btn-primary btn-sm" href="contact.html">Book a consult <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menuOverlay" aria-label="Open menu"><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <nav class="menu-inner" aria-label="Mobile navigation">
+      <a style="--i:0" href="index.html">Home</a><a style="--i:1" href="about.html">About</a><a style="--i:2" href="products.html">Products</a><a style="--i:3" href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-foot"><span>14 Willow Lane · Northgate</span><span>Open until 8pm today</span><span>(555) 0142-8890</span></div>
+  </div>
+
+  <main>
+    <section class="page-hero grid-bg">
+      <div class="wrap">
+        <div>
+          <div class="breadcrumb">Home <span>/</span> Products</div>
+          <h1 class="display">The <em>apothecary</em> shelf.</h1>
+          <p class="lead">Everything here is something we'd recommend to our own families. Filter, search, or just have a browse.</p>
+        </div>
+        <div class="page-hero-aside">
+          <p><strong>Free local delivery</strong>On orders over $30, same day.</p>
+          <p><strong>Questions?</strong> A pharmacist is always happy to help before you buy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="catalog-head reveal">
+          <div class="filters" role="group" aria-label="Filter products by category">
+            <button class="filter-btn is-active" data-filter="All" type="button">All products</button>
+            <button class="filter-btn" data-filter="Supplements" type="button">Supplements</button>
+            <button class="filter-btn" data-filter="Wellness" type="button">Wellness</button>
+            <button class="filter-btn" data-filter="Skincare" type="button">Skincare</button>
+            <button class="filter-btn" data-filter="Essentials" type="button">Essentials</button>
+          </div>
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="productSearch" type="search" placeholder="Search the shelf…" aria-label="Search products">
+          </label>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="product-card reveal" data-category="Supplements" data-name="daily multivitamin">
+            <div class="product-art art-a"><span class="product-tag">Bestseller</span>
+              <img src="img/supplement.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info"><span class="product-cat">Supplements</span><h3>Daily Multivitamin</h3><p>One capsule, everything you need. A balanced blend for steady energy.</p><div class="product-bottom"><span class="price">$24.00</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div></div>
+          </article>
+
+          <article class="product-card reveal" data-category="Supplements" data-name="vitamin d3 drops">
+            <div class="product-art art-b">
+              <img src="img/dropper.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info"><span class="product-cat">Supplements</span><h3>Vitamin D3 Drops</h3><p>Sunshine in a bottle. Two drops a day, all year round.</p><div class="product-bottom"><span class="price">$18.50</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div></div>
+          </article>
+
+          <article class="product-card reveal" data-category="Wellness" data-name="herbal sleep tea">
+            <div class="product-art art-c">
+              <img src="img/tea-box.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info"><span class="product-cat">Wellness</span><h3>Herbal Sleep Tea</h3><p>Chamomile, lemon balm and a little help winding down.</p><div class="product-bottom"><span class="price">$12.00</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div></div>
+          </article>
+
+          <article class="product-card reveal" data-category="Skincare" data-name="eczema relief balm">
+            <div class="product-art art-d">
+              <img src="img/balm.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info"><span class="product-cat">Skincare</span><h3>Eczema Relief Balm</h3><p>Gentle, fragrance-free comfort for sensitive skin.</p><div class="product-bottom"><span class="price">$16.00</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div></div>
+          </article>
+
+          <article class="product-card reveal" data-category="Supplements" data-name="children's capsules">
+            <div class="product-art art-e"><span class="product-tag">New</span>
+              <img src="img/capsule.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info"><span class="product-cat">Supplements</span><h3>Children's Capsules</h3><p>Chewable, kid-friendly vitamins with no added sugar.</p><div class="product-bottom"><span class="price">$21.00</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div></div>
+          </article>
+
+          <article class="product-card reveal" data-category="Wellness" data-name="magnesium powder">
+            <div class="product-art art-a">
+              <img src="img/jar.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info"><span class="product-cat">Wellness</span><h3>Magnesium Powder</h3><p>A calming evening ritual. Mix into water before bed.</p><div class="product-bottom"><span class="price">$27.00</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div></div>
+          </article>
+
+          <article class="product-card reveal" data-category="Skincare" data-name="sunscreen spf 50">
+            <div class="product-art art-b">
+              <img src="img/sunscreen.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info"><span class="product-cat">Skincare</span><h3>Sunscreen SPF 50</h3><p>Light, non-greasy daily protection for every skin tone.</p><div class="product-bottom"><span class="price">$19.50</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div></div>
+          </article>
+
+          <article class="product-card reveal" data-category="Essentials" data-name="first aid kit">
+            <div class="product-art art-c">
+              <img src="img/first-aid.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="product-info"><span class="product-cat">Essentials</span><h3>First Aid Kit</h3><p>The basics, neatly packed for home, car or travel.</p><div class="product-bottom"><span class="price">$32.00</span><button class="add-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add</button></div></div>
+          </article>
+
+          <div class="empty-state is-hidden"><h3>Nothing on this shelf.</h3><p>Try a different category or search term.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <div class="cta-inner reveal">
+          <div><h2>Need something specific?</h2><p>If it's not on the shelf, ask us. We can often order it in — or make it for you.</p></div>
+          <a class="btn btn-ghost" href="contact.html">Ask a pharmacist <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="8" width="18" height="8" rx="4" transform="rotate(-40 12 12)"/><path d="M12 8v8" transform="rotate(-40 12 12)"/></svg></span><span class="brand-name">Larkspur<span class="brand-dot">.</span></span></a><p>An independent pharmacy for the people who live around the corner. Care, compounded with attention since 2014.</p></div>
+        <div class="footer-col"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About us</a></li><li><a href="products.html">Products</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Visit</h4><ul><li>14 Willow Lane</li><li>Northgate, NG2 4LP</li><li>Mon–Sun, 8am–8pm</li><li>(555) 0142-8890</li></ul></div>
+        <div class="footer-col footer-news"><h4>The good stuff</h4><p>Occasional notes on wellness, new arrivals and things worth knowing.</p><form class="footer-form"><label class="sr-only" for="footerEmail">Email address</label><input id="footerEmail" type="email" placeholder="Your email"><button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Larkspur Pharmacy</span><span>Licensed pharmacy · Registration No. 4471-NG</span><span>Made with care in Northgate</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
